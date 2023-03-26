@@ -1,3 +1,4 @@
+pub mod binomial_coefficient;
 pub mod circle;
 pub mod factorials;
 pub mod rectangle;
