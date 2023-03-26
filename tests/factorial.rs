@@ -33,4 +33,20 @@ mod tests {
         assert_eq!(factorials::hyperfactorial(2), 4);
         assert_eq!(factorials::hyperfactorial(5), 86400000);
     }
+
+    #[test]
+    fn test_small_multifactorial() {
+        assert_eq!(factorials::multifactorial(1, 2), 1);
+        assert_eq!(factorials::multifactorial(2, 3), 2);
+        assert_eq!(factorials::multifactorial(5, 10), 5);
+        assert_eq!(factorials::multifactorial(15, 3), 29160);
+    }
+
+    #[test]
+    fn test_big_multifactorial() {
+        assert_eq!(factorials::multifactorial(1, 100), 1);
+        assert_eq!(factorials::multifactorial(2, 100), 2);
+        assert_eq!(factorials::multifactorial(5, 100), 5);
+        assert_eq!(factorials::multifactorial(15, 100), 15);
+    }
 }
