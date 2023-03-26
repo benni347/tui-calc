@@ -1,15 +1,11 @@
-pub fn factorial(number: f64) -> Result<f64, String> {
-    // This is the extended factorial function to be exact the gamma function, it works with non
-    // possitive integers.
-    // https://mathworld.wolfram.com/GammaFunction.html
-    if number == 0.0 {
-        Ok(1.0)
-    } else if number > 0.0 {
-        let result = factorial(number - 1.0)?;
-        Ok(number * result)
-    } else {
-        Err(String::from("Values smaller 0 aren't implemented yet"))
+pub mod sphere;
+
+pub fn factorial(number: u128) -> u128 {
+    let mut result: u128 = 1;
+    for i in 1..=number {
+        result *= i;
     }
+    result
 }
 
 pub fn add(nums: &[i128]) -> i128 {
@@ -26,4 +22,8 @@ pub fn substract(nums: &[i128]) -> i128 {
         result -= *num;
     }
     result
+}
+
+pub fn pi() -> f64 {
+    std::f64::consts::PI
 }
