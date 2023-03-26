@@ -1,12 +1,4 @@
-pub mod add;
-// pub mod divide;
-pub mod multiply;
-pub mod substract;
-
-use crate::add::add;
-// use crate::divide::divide;
-use crate::multiply::multiply;
-use crate::substract::substract;
+use tuicalc::*;
 
 fn main() {
     let nums = [1, 2, 3, 4, 5];
