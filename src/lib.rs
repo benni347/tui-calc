@@ -1,5 +1,6 @@
 pub mod circle;
 pub mod sphere;
+pub mod square;
 
 pub fn factorial(number: u128) -> u128 {
     let mut result: u128 = 1;
