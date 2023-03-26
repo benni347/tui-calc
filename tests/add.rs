@@ -1,6 +1,4 @@
-pub fn add(nums: &[i128]) -> i128 {
-    nums.iter().fold(0, |acc, x| acc + x)
-}
+use tuicalc::add;
 
 #[cfg(test)]
 mod tests {

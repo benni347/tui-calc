@@ -1,10 +1,4 @@
-pub fn substract(nums: &[i128]) -> i128 {
-    let mut result = nums[0];
-    for num in &nums[1..] {
-        result -= *num;
-    }
-    result
-}
+use tuicalc::substract;
 
 #[cfg(test)]
 mod tests {

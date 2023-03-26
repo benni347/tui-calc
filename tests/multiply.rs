@@ -1,6 +1,4 @@
-pub fn multiply(nums: &[i128]) -> i128 {
-    nums.iter().fold(1, |acc, x| acc * x)
-}
+use tuicalc::multiply;
 
 #[cfg(test)]
 mod tests {
