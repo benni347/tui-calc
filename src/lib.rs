@@ -1,5 +1,6 @@
 pub mod binomial_coefficient;
 pub mod circle;
+pub mod cone;
 pub mod factorials;
 pub mod rectangle;
 pub mod sphere;
