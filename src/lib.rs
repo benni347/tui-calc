@@ -5,6 +5,7 @@ pub mod factorials;
 pub mod rectangle;
 pub mod sphere;
 pub mod square;
+pub mod triangle;
 
 pub fn add(nums: &[i128]) -> i128 {
     nums.iter().sum()
