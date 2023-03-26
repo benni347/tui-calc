@@ -11,7 +11,7 @@ fn solver_one_unkonw_linear_equation(
     let lhs_var = lhs_parts[1];
     let rhs_const = rhs_parts[0].parse::<i128>().unwrap();
 
-    if variable_to_solve_for == None {
+    if variable_to_solve_for.is_none() {
         variable_to_solve_for = Some("x")
     }
 
