@@ -1,15 +1,8 @@
 pub mod circle;
+pub mod factorials;
 pub mod rectangle;
 pub mod sphere;
 pub mod square;
-
-pub fn factorial(number: u128) -> u128 {
-    let mut result: u128 = 1;
-    for i in 1..=number {
-        result *= i;
-    }
-    result
-}
 
 pub fn add(nums: &[i128]) -> i128 {
     nums.iter().fold(0, |acc, x| acc + x)
