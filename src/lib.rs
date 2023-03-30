@@ -2,6 +2,7 @@ pub mod binomial_coefficient;
 pub mod circle;
 pub mod cone;
 pub mod factorials;
+pub mod fibonacci;
 pub mod rectangle;
 pub mod sphere;
 pub mod square;
