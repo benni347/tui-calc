@@ -26,3 +26,11 @@ pub fn substract(nums: &[i128]) -> i128 {
 pub fn pi() -> f64 {
     std::f64::consts::PI
 }
+
+pub fn phi() -> f64 {
+    (1.0 + 5f64.sqrt()) / 2.0
+}
+
+pub fn psi() -> f64 {
+    (1.0 - 5f64.sqrt()) / 2.0
+}
